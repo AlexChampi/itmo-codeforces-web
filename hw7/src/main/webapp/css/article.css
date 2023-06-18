@@ -1,0 +1,91 @@
+:root {
+    --solid-border: 1px solid;
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --lght_gray: #e1e1e1;
+    --drk_gray: #b9b9b9;
+    --left-form-margin: 185px;
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+/* exercise 3 */
+main article .title {
+    margin-top: 1em;
+}
+
+/* exercise 3 */
+main article .title {
+    font-size: 1.5rem;
+    color: var(--caption-color);
+    font-weight: bold;
+}
+
+/* exercise 3 */
+main article .information {
+    opacity: 0.5;
+    margin-top: 0.5em;
+}
+
+/* exercise 3 */
+main article .body {
+    margin-top: 1em;
+    padding-left: 1em;
+    border-left: 4px solid var(--drk_gray);
+    line-height: 20px;
+}
+
+/* exercise 3 */
+main article ul {
+    padding-left: 20px;
+}
+
+/* exercise 3 */
+main article li {
+    list-style-image: url("../img/paperclip-16x16.png");
+    color: var(--drk_gray);
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* exercise 3 */
+main article li a{
+    font-weight: normal !important;
+}
+
+/* exercise 3 */
+main article .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    border: var(--solid-border) var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+/* exercise 3 */
+main article .footer .left, .right {
+    margin: 0.6em 1em;
+    display: flex;
+    align-items: center;
+}
+
+/* exercise 3 */
+main article .footer .left {
+    font-size: larger;
+    font-weight: bold;
+    color: green;
+}
+
+/* exercise 3 */
+main article .footer .left span {
+    margin: 0 0.4em;
+}
+
+/* exercise 3 */
+main article .footer .right img {
+    margin: 0 0.4em 0 1em;
+}

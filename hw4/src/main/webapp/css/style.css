@@ -1,0 +1,271 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --boder: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --lght_gray: #e1e1e1;
+    --caption-color: #3B5998;
+    --drk_gray: #b9b9b9;
+    --solid-border: 1px solid;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+header nav ul li a.current {
+    border-bottom: 3px solid var(--caption-color);
+}
+
+.middle {
+    display: flow-root;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--boder);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: var(--boder);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--boder);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main {
+    margin-right: 21rem;
+}
+
+main .user-profile {
+    border: var(--boder);
+    border-radius: var(--border-radius);
+    padding: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .user-profile .name-link {
+    font-size: 2rem;
+}
+
+main .user-profile .photo {
+    justify-content: flex-end;
+}
+
+main .profile-switcher {
+    font-size: 3rem;
+    display: flex;
+}
+
+main .profile-switcher .arrow {
+    color: var(--caption-color);
+}
+
+main .profile-switcher .arrow-empty {
+    color: var(--border-color);
+}
+
+main .profile-switcher .arrow a {
+    text-decoration: none;
+}
+
+main .profile-switcher .arrow a:visited {
+    text-decoration: none;
+    color: var(--caption-color);
+}
+
+/* exercise 2 */
+main .datatable {
+    background-color: var(--lght_gray);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    font-size: 0.9em;
+}
+
+/* exercise 2 */
+main .datatable .caption {
+    padding: 4px 0 4px 10px;
+}
+
+/* exercise 2 */
+main .datatable table {
+    border-collapse: collapse;
+    background-color: white;
+    border: var(--solid-border) var(--lght_gray);
+    width: 100%;
+}
+
+/* exercise 2 */
+main .datatable table td, th {
+    text-align: center;
+    padding: 0.4em;
+    border-top: var(--solid-border) var(--lght_gray);
+    border-right: var(--solid-border) var(--lght_gray);
+}
+
+/* exercise 2 */
+main .datatable table tbody tr:nth-child(2n-1) {
+    background-color: #f8f8f8;
+}
+
+/* exercise 3 */
+main article .title {
+    margin-top: 1em;
+}
+
+/* exercise 3 */
+main article .title {
+    font-size: 1.5rem;
+    color: var(--caption-color);
+    font-weight: bold;
+}
+
+/* exercise 3 */
+main article .information {
+    opacity: 0.5;
+    margin-top: 0.5em;
+}
+
+/* exercise 3 */
+main article .body {
+    margin-top: 1em;
+    padding-left: 1em;
+    border-left: 4px solid var(--drk_gray);
+    line-height: 20px;
+}
+
+/* exercise 3 */
+main article ul {
+    padding-left: 20px;
+}
+
+/* exercise 3 */
+main article li {
+    list-style-image: url("../img/paperclip-16x16.png");
+    color: var(--drk_gray);
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* exercise 3 */
+main article li a {
+    font-weight: normal !important;
+}
+
+main article .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    border: var(--solid-border) var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+main article .footer .left, .right {
+    margin: 0.6em 1em;
+    display: flex;
+    align-items: center;
+}
+
+main article .footer .left {
+    font-size: larger;
+    font-weight: bold;
+    color: green;
+}
+
+main article .footer .left span {
+    margin: 0 0.4em;
+}
+
+main article .footer .right img {
+    margin: 0 0.4em 0 1em;
+}
+
+main .colored {
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--boder);
+    text-align: center;
+}
